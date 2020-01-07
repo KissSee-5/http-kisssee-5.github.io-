@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .ticket-all {
+            width: 1140px;
+            
+            margin: auto;
+        }
+        
+        .ticket-top{
+            width: 100%;
+            height: 200px;
+          
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .ticket-mid{
+            width: 100%;
+            height: 200px;
+            
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ticket-bot{
+            width: 100%;
+            height: 230px;
+          
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .full-ticket {
+            width: 530px;
+            height: 200px;
+          
+        }
+        .half-ticket{
+            width: 530px;
+            height: 200px;
+           
+        }
+        .member-ticket{
+            width: 530px;
+            height: 200px;
+ 
+        }
+        .heart-ticket{
+            width: 530px;
+            height: 200px;
+
+        }
+        .child-ticket{
+            width: 530px;
+            height: 230px;
+
+        }
+        .ticket-word{
+            width: 530px;
+            height: 300px;
+            border: solid 2px black;
+            font-size: 24px;
+        }
+        .ticket-word li{
+            padding: 10px;
+        }
+        .ticket-kind{
+            width: 526px;
+            height: 55px;
+            background-color: blue;
+            color: white;
+            display: flex;
+            text-align: center;
+            font-size: 24px;
+            line-height: 55px;
+            border:solid 2px black;
+        }
+        .blank{
+            width: 32.5%;
+            height: 55px;
+        }
+        .ticket-2D{
+            width: 33.4%;
+            height: 55px;
+            border-left: solid 2px black;
+        }
+        .ticket-3D{
+            width: 33.3%;
+            height: 55px;
+            border-left: solid 2px black;
+        }
+        .price{
+            width: 530px;
+            height: 55px;
+            display: flex;
+            text-align: center;
+            font-size: 24px;
+            line-height: 55px;
+        }
+        .ticket-name{
+            width: 33%;
+            height: 55px;
+            background-color:blue;
+            color: white;
+        }
+        .price-2D{
+            width: 33.4%;
+            height: 55px;
+            font-size: 30px;
+            border-left: solid 2px black;
+        }
+        .price-3D{
+            width: 33.3%;
+            height: 55px;
+            font-size: 30px;
+            border-left: solid 2px black;
+            border-right: solid 2px black;
+        }
+        .ticket-note{
+            width: calc(100% - 4px);
+            height: 90px;
+            text-align: center;
+            font-size: 24px;
+            line-height: 90px;
+            border: solid 2px black;
+        }
+        .child-ticket-note{
+            width: calc(100% - 4px);
+            height: 185px;
+            font-size: 24px;
+            border: solid 2px black;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="ticket-all">
+        <div class="ticket-top">
+            <div class="full-ticket">
+                <div class="ticket-kind">
+                    <div class="blank"></div>
+                    <div class="ticket-2D">2D</div>
+                    <div class="ticket-3D">3D</div>
+                </div>
+                <div class="price">
+                    <div class="ticket-name">全票</div>
+                    <div class="price-2D">210</div>
+                    <div class="price-3D">300</div>
+                </div>
+                <div class="ticket-note">一般成人</div>
+            </div>
+            <div class="half-ticket">
+                <div class="ticket-kind">
+                    <div class="blank"></div>
+                    <div class="ticket-2D">2D</div>
+                    <div class="ticket-3D">3D</div>
+                </div>
+                <div class="price">
+                    <div class="ticket-name">半票</div>
+                    <div class="price-2D">190</div>
+                    <div class="price-3D">280</div>
+                </div>
+                <div class="ticket-note">早場、晚場及學生、軍警</div>
+            </div>
+        </div>
+        <div class="ticket-mid">
+            <div class="member-ticket">
+                <div class="ticket-kind">
+                    <div class="blank"></div>
+                    <div class="ticket-2D">2D</div>
+                    <div class="ticket-3D">3D</div>
+                </div>
+                <div class="price">
+                    <div class="ticket-name">會員票</div>
+                    <div class="price-2D">190</div>
+                    <div class="price-3D">280</div>
+                </div>
+                <div class="ticket-note">須出示會員卡</div>
+            </div>
+            <div class="heart-ticket">
+                <div class="ticket-kind">
+                    <div class="blank"></div>
+                    <div class="ticket-2D">2D</div>
+                    <div class="ticket-3D">3D</div>
+                </div>
+                <div class="price">
+                    <div class="ticket-name">愛心票</div>
+                    <div class="price-2D">150</div>
+                    <div class="price-3D">210</div>
+                </div>
+                <div class="ticket-note">滿6歲以上～未滿12歲之兒童(須出示證件)</div>
+            </div>
+        </div>
+        <div class="ticket-bot">
+            <div class="child-ticket">
+                <div class="ticket-kind">
+                    <div class="blank"></div>
+                    <div class="ticket-2D">2D</div>
+                    <div class="ticket-3D">3D</div>
+                </div>
+                <div class="price">
+                    <div class="ticket-name">兒童票</div>
+                    <div class="price-2D">105</div>
+                    <div class="price-3D">150</div>
+                </div>
+                <div class="child-ticket-note">
+                    <ul>
+                        <li>
+                            持有身心障礙手冊（註記陪伴者優惠限１位）
+                        </li>
+                        <li>
+                            滿65歲以上，購票及入場須出示證件，限本人使用。
+                        </li>
+                        <li>
+                            滿2歲以上～未滿6歲幼童，限觀賞普遍級電影。
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="ticket-word">
+                <ul>
+                    <li>
+                        持優待票觀賞3D影片須補80元、持招待票觀賞3D影片須補150元。
+                    </li>
+                    <li>
+                        2 D或3 D影片，未滿2歲且不佔位之兒童無需購票可免費入場觀賞普遍級影片，每位兒童須由至紹一位已購票之成人陪伴。
+                    </li>
+                    <li>
+                        憑會員卡現金購票 3D $280元、2D $190元。
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

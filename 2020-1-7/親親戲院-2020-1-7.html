@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="00_bodyCss.css">
+    <link rel="stylesheet" href="01_banner區塊.css">
+    <link rel="stylesheet" href="02_熱門上映電影區塊.css">
+    <link rel="stylesheet" href="03_ticket-price.css">
+    <link rel="stylesheet" href="04_MemberSection.css">
+    <link rel="stylesheet" href="05_merchandise.Css">
+    <link rel="stylesheet" href="06_樓層介紹.css">
+    <link rel="stylesheet" href="07_creditCard.css">
+    <link rel="stylesheet" href="08_交通.css">
+    <link rel="stylesheet" href="09_footer.css">
+    <link rel="stylesheet" href="10_對話框.css">
+    <link rel="stylesheet" href="SoonRelease.css">
+
+    <title>親親戲院</title>
+    <style>
+        @media(max-width: 1140px) {
+            .all{
+                min-width: 1140px;
+            }
+            .nav-container {
+                width: 100%;
+            }
+            .button {
+                font-size: 30px;
+            }
+            .rest {
+                position: unset;
+                margin: auto;
+            }
+            .space-word {
+                text-align: center;
+            }
+            .rest-word {
+                left: 18%;
+            }
+            .ticket-all{
+                width: 100%;
+            }
+        }
+
+        @media(max-width: 768px) {}
+    </style>
+
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="main">
+            <div class="banner">
+                <div class="bannerswiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url('Banner-02.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('Banner-03.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('Banner-04.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('Banner-05.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('Banner-05.png');"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="nav-container">
+                    <div class="logo"></div>
+                    <div class="button-box">
+                        <div class="button"><a href="#A" style="color: yellow;">電影介紹</a> </div>
+                        <div class="button"><a href="#B" style="color: yellow;">票價查詢</a> </div>
+                        <div class="button"><a href="#C" style="color: yellow;">會員專區</a></div>
+                        <div class="button"><a href="#D" style="color: yellow;">商品專區</a></div>
+                        <div class="button"><a href="#E" style="color: yellow;">關於親親</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movieArea">
+            <div id='A' class="hot">現正熱映</div>
+            <div class="movieswiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image:url('movie01.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie02.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie03.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie04.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie05.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie06.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie07.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('movie08.jpg')"></div>
+                </div>
+                <div class="movieContent">
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:A</li>
+                                        <li>片長:A</li>
+                                        <li>分類:A</li>
+                                        <li>介紹:A</li>
+                                        <li>分級:A</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:B</li>
+                                        <li>片長:B</li>
+                                        <li>分類:B</li>
+                                        <li>介紹:B</li>
+                                        <li>分級:B</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:C</li>
+                                        <li>片長:C</li>
+                                        <li>分類:C</li>
+                                        <li>介紹:C</li>
+                                        <li>分級:C</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:D</li>
+                                        <li>片長:D</li>
+                                        <li>分類:D</li>
+                                        <li>介紹:D</li>
+                                        <li>分級:D</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:D</li>
+                                        <li>片長:D</li>
+                                        <li>分類:D</li>
+                                        <li>介紹:D</li>
+                                        <li>分級:D</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:D</li>
+                                        <li>片長:D</li>
+                                        <li>分類:D</li>
+                                        <li>介紹:D</li>
+                                        <li>分級:D</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:D</li>
+                                        <li>片長:D</li>
+                                        <li>分類:D</li>
+                                        <li>介紹:D</li>
+                                        <li>分級:D</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="area">
+
+                        <!-- 舖蓋畫面區域 -->
+                        <div class="modal">
+                            <!-- 關閉按鈕 -->
+
+
+                            <!-- 覆蓋畫面區域圖片 -->
+                            <div class="modal-content"></div>
+
+                            <div class="modal-content-textArea">
+                                <!-- 覆蓋畫面區域文字 -->
+                                <div class="modal-content-text">
+                                    <ul>
+                                        <li>名稱:D</li>
+                                        <li>片長:D</li>
+                                        <li>分類:D</li>
+                                        <li>介紹:D</li>
+                                        <li>分級:D</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-content-timeArea">
+                                    <div class="modal-content-time">
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+
+                                        <ul class="time">
+                                            <li>場次</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                            <li>時間</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coming-soon">即將上映</div>
+        <div class="released">
+            <div class="released-block">
+                <div class="container-a">
+                    <div class="area1">
+                        <div class="movie1"></div>
+                        <div class="movie2"></div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="area2">
+                        <div class="area3">
+                            <div class="movie6"></div>
+                            <div class="movie7"></div>
+                            <div class="movie8"></div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="movie3"></div>
+                        <div class="movie4"></div>
+                        <div class="movie5"></div>
+                        <div class="movie9"></div>
+                        <div class="clearfix"></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="ticketArea">
+            <div id='B' class='ticket'>票價查詢</div>
+            <div class="ticket-all">
+                <div class="ticket-top">
+                    <div class="full-ticket">
+                        <div class="ticket-kind">
+                            <div class="blank"></div>
+                            <div class="ticket-2D">2D</div>
+                            <div class="ticket-3D">3D</div>
+                        </div>
+                        <div class="price">
+                            <div class="ticket-name">全票</div>
+                            <div class="price-2D">210</div>
+                            <div class="price-3D">300</div>
+                        </div>
+                        <div class="ticket-note">一般成人</div>
+                    </div>
+                    <div class="half-ticket">
+                        <div class="ticket-kind">
+                            <div class="blank"></div>
+                            <div class="ticket-2D">2D</div>
+                            <div class="ticket-3D">3D</div>
+                        </div>
+                        <div class="price">
+                            <div class="ticket-name">半票</div>
+                            <div class="price-2D">190</div>
+                            <div class="price-3D">280</div>
+                        </div>
+                        <div class="ticket-note">早場、晚場及學生、軍警</div>
+                    </div>
+                </div>
+                <div class="ticket-mid">
+                    <div class="member-ticket">
+                        <div class="ticket-kind">
+                            <div class="blank"></div>
+                            <div class="ticket-2D">2D</div>
+                            <div class="ticket-3D">3D</div>
+                        </div>
+                        <div class="price">
+                            <div class="ticket-name">會員票</div>
+                            <div class="price-2D">190</div>
+                            <div class="price-3D">280</div>
+                        </div>
+                        <div class="ticket-note">須出示會員卡</div>
+                    </div>
+                    <div class="heart-ticket">
+                        <div class="ticket-kind">
+                            <div class="blank"></div>
+                            <div class="ticket-2D">2D</div>
+                            <div class="ticket-3D">3D</div>
+                        </div>
+                        <div class="price">
+                            <div class="ticket-name">愛心票</div>
+                            <div class="price-2D">150</div>
+                            <div class="price-3D">210</div>
+                        </div>
+                        <div class="ticket-note">滿6歲以上～未滿12歲之兒童(須出示證件)</div>
+                    </div>
+                </div>
+                <div class="ticket-bot">
+                    <div class="child-ticket">
+                        <div class="ticket-kind">
+                            <div class="blank"></div>
+                            <div class="ticket-2D">2D</div>
+                            <div class="ticket-3D">3D</div>
+                        </div>
+                        <div class="price">
+                            <div class="ticket-name">兒童票</div>
+                            <div class="price-2D">105</div>
+                            <div class="price-3D">150</div>
+                        </div>
+                        <div class="child-ticket-note">
+                            <ul>
+                                <li>
+                                    持有身心障礙手冊（註記陪伴者優惠限１位）
+                                </li>
+                                <li>
+                                    滿65歲以上，購票及入場須出示證件，限本人使用。
+                                </li>
+                                <li>
+                                    滿2歲以上～未滿6歲幼童，限觀賞普遍級電影。
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="ticket-word">
+                        <ul>
+                            <li>
+                                持優待票觀賞3D影片須補80元、持招待票觀賞3D影片須補150元。
+                            </li>
+                            <li>
+                                2D或3D影片，未滿2歲且不佔位之兒童無需購票可免費入場觀賞普遍級影片，每位兒童須由至紹一位已購票之成人陪伴。
+                            </li>
+                            <li>
+                                憑會員卡現金購票3D$280元、2D$190元。
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id='C' class="memberArea">
+            <div class="member"></div>
+        </div>
+        <div class="merchandiseArea">
+            <div id='D' class="merchandisetitle">商品專區</div>
+
+            <div class="commodity">
+                <div class="bread">
+                    <div class="bread-top">
+                        <div class="bread-1"></div>
+                        <div class="bread-2"></div>
+                        <div class="bread-3"></div>
+                    </div>
+                    <div class="bread-mid">
+                        <div class="bread-4"></div>
+                        <div class="bread-logo"></div>
+                        <div class="bread-5"></div>
+                    </div>
+                    <div class="bread-bot">
+                        <div class="bread-6"></div>
+                        <div class="bread-7"></div>
+                        <div class="bread-8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div id='E' class="abouttitle">關於親親</div>
+
+            <div class="elevator">
+
+                <div class="container-2">
+                    
+                    <div class="floor">
+                        
+                        <ul>
+                            <div class="triangle"></div>
+                            <li class="button-2"><a href="#displayarea1">3F</a></li>
+                            <li class="button-2"><a href="#displayarea2">2F</a></li>
+                            <li class="button-2"><a href="#displayarea3">1F</a></li>
+                            <li class="button-2"><a href="#displayarea4">B1</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="container_wrapper">
+                        <div class="leftpanel"></div>
+                        <div class="rightpanel"></div>
+                        <div id="displayarea1"></div>
+                        <div class="leftpanel"></div>
+                        <div class="rightpanel"></div>
+                        <div id="displayarea2"></div>
+                        <div class="leftpanel"></div>
+                        <div class="rightpanel"></div>
+                        <div id="displayarea3"></div>
+                        <div class="leftpanel"></div>
+                        <div class="rightpanel"></div>
+                        <div id="displayarea4"></div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="space">
+                <div class="space-word">休閒場所</div>
+            </div>
+            <div class="restArea">
+                <div class="rest">
+                    <div class="rest-place-1">
+                        <div class="rest-img01"></div>
+                        <div class="rest-img02"></div>
+                        <div class="rest-img03"></div>
+                    </div>
+                    <div class="rest-place-2">
+                        <div class="rest-img04"></div>
+                        <div class="rest-img05"></div>
+                        <div class="rest-img06"></div>
+                    </div>
+                    <div class="rest-word">
+                        台中親親影城安全的環境設計，客層大多以家庭成員為主；除了電影院之外，親親影城所在大樓逐漸發展成電影娛樂城，附設B1湯姆熊遊戲場、1F哈拉麵包‧咖啡、集蛋扭蛋專門店以及個人電話亭KTV，成為當地居民娛樂的重心之一。
+                    </div>
+                </div>
+            </div>
+            <div class="traffic-area">
+                <div class="traffic">
+                    <div class="traffic-word">
+                        <div class="traffic-content">
+                            <span>交通指南</span>
+                            <p>汽、機車停車場：戲院後方</p>
+                            <p>汽車：每小時30元</p>
+                            <p>機車：每次10元</p>
+                            <p>大眾運輸：</p>
+                            <p> 1、8、14、15、21、55、59、82、105、132、203、270、271、276、277、900、901</span>
+                        </div>
+
+                    </div>
+                    <div class="map"></div>
+                    <div class="park"></div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="footer">
+            <div class="footer-word">
+                電話：04-2231-9111
+                <br>
+                <br>
+                地址：台中市北區北屯路14號
+                <br>
+                <br>
+                Copyright © 2020 親親影城 CHIN CHIN CINEMA . All Rights Reserved.
+            </div>
+
+
+        </div>
+
+        <div class="credit-card"></div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+
+        var movieContent = document.querySelectorAll('.area');
+
+
+        $('.movieswiper-container .swiper-wrapper .swiper-slide').click(function () {
+            console.log("click")
+            console.log(swipermovie.activeIndex)
+            movieContent[swipermovie.activeIndex].classList.add('active');
+        }
+        )
+        $('.modal').click(function () {
+            console.log("click")
+            console.log(swipermovie.activeIndex)
+            movieContent[swipermovie.activeIndex].classList.remove('active');
+
+        }
+        )
+
+
+        var swipermovie = new Swiper('.movieswiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            autowidth:true,
+            slidesPerView: 'auto',
+            slideToClickedSlide: true,
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+        var swiperbanner = new Swiper('.bannerswiper-container', {
+            spaceBetween: 30,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+
+
+
+</body>
+
+</html>
