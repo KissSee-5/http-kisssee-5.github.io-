@@ -22,31 +22,63 @@
     <title>親親戲院</title>
     <style>
         @media(max-width: 1140px) {
-            .all{
+            .all {
                 min-width: 1140px;
             }
+
             .nav-container {
                 width: 100%;
             }
+
             .button {
                 font-size: 30px;
             }
+
             .rest {
                 position: unset;
                 margin: auto;
             }
+
             .space-word {
                 text-align: center;
             }
+
             .rest-word {
                 left: 18%;
             }
-            .ticket-all{
+
+            .ticket-all {
                 width: 100%;
             }
         }
 
-        @media(max-width: 768px) {}
+        @media(max-width: 768px) {
+            .movieArea {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .hot {
+                font-size: 30px;
+                line-height: 65px;
+                margin-top: 30px;
+                background-color: brown;
+            }
+
+            .modal {
+                flex-direction: column;
+            }
+
+            .modal-content {
+                width: 100%;
+                background-color: turquoise;
+            }
+
+            .floor {
+                margin-top: 570px;
+            }
+        }
     </style>
 
 
@@ -66,18 +98,18 @@
                     </div>
                 </div>
             </div>
-            <div class="nav">
+            <nav id="main">
                 <div class="nav-container">
                     <div class="logo"></div>
                     <div class="button-box">
-                        <div class="button"><a href="#A" style="color: yellow;">電影介紹</a> </div>
-                        <div class="button"><a href="#B" style="color: yellow;">票價查詢</a> </div>
-                        <div class="button"><a href="#C" style="color: yellow;">會員專區</a></div>
-                        <div class="button"><a href="#D" style="color: yellow;">商品專區</a></div>
-                        <div class="button"><a href="#E" style="color: yellow;">關於親親</a></div>
+                        <div class="button"><a href="#A" style="color: white;">電影介紹</a> </div>
+                        <div class="button"><a href="#B" style="color: white;">票價查詢</a> </div>
+                        <div class="button"><a href="#C" style="color: white;">會員專區</a></div>
+                        <div class="button"><a href="#D" style="color: white;">商品專區</a></div>
+                        <div class="button"><a href="#E" style="color: white;">關於親親</a></div>
                     </div>
                 </div>
-            </div>
+            </nav>
         </div>
         <div class="movieArea">
             <div id='A' class="hot">現正熱映</div>
@@ -694,9 +726,8 @@
             <div class="elevator">
 
                 <div class="container-2">
-                    
                     <div class="floor">
-                        
+
                         <ul>
                             <div class="triangle"></div>
                             <li class="button-2"><a href="#displayarea1">3F</a></li>
@@ -705,8 +736,6 @@
                             <li class="button-2"><a href="#displayarea4">B1</a></li>
                         </ul>
                     </div>
-
-
                     <div class="container_wrapper">
                         <div class="leftpanel"></div>
                         <div class="rightpanel"></div>
@@ -818,7 +847,7 @@
             effect: 'coverflow',
             grabCursor: true,
             centeredSlides: true,
-            autowidth:true,
+            autowidth: true,
             slidesPerView: 'auto',
             slideToClickedSlide: true,
             coverflowEffect: {
@@ -849,6 +878,31 @@
                 prevEl: '.swiper-button-prev',
             },
         });
+
+
+
+        // 取得導覽列元素
+        const nav = document.querySelector('#main');
+        // 取得導覽列元素頂端位置
+        const topOfNav = nav.offsetTop;
+
+        function fixNav() {
+            // 如果觀景窗頂部位置值大於導覽列頂部就沾黏，反之取消沾黏
+            if (window.scrollY >= topOfNav) {
+                document.body.style.paddingTop = nav.offsetHeight + 'px';
+                document.body.classList.add('fixed-nav');
+            } else {
+                document.body.style.paddingTop = 0;
+                document.body.classList.remove('fixed-nav');
+            }
+        }
+
+        // 監聽滾動事件
+        window.addEventListener('scroll', fixNav);
+
+
+
+
     </script>
 
 
