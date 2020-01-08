@@ -39,7 +39,7 @@ nav {
 .logo {
     width: 100px;
     height: 100px;
-    background-image: url('/img/CHIN-logo-03.png');
+    background-image: url('../img/CHIN-logo-03.png');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
