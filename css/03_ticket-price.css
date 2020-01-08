@@ -8,7 +8,7 @@
 
 .ticketArea {
     width:100%;
-    background-image: url('bg01.jpg');
+    background-image: url('/img/bg01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -19,7 +19,7 @@
 .space {
     line-height: 200px;
     font-size: 60px;
-    background-image: url('休閒區塊.jpg');
+    background-image: url('/img/休閒區塊.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -29,7 +29,7 @@
 }
 .restArea {
     width: 100%;
-    background-image: url('bg02.jpg');
+    background-image: url('/img/bg02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@
 .rest-img01 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea01.jpg');
+    background-image: url('/img/restarea01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 .rest-img02 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea02.jpg');
+    background-image: url('/img/restarea02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,7 +80,7 @@
 .rest-img03 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea03.jpg');
+    background-image: url('/img/restarea03.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -89,7 +89,7 @@
 .rest-img04 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea01.jpg');
+    background-image: url('/img/restarea01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -98,7 +98,7 @@
 .rest-img05 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea02.jpg');
+    background-image: url('/img/restarea02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
 .rest-img06 {
     width: 30%;
     height: 100%;
-    background-image: url('restarea03.jpg');
+    background-image: url('/img/restarea03.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ li button {
 /* 左電梯門 點擊前覆蓋畫面 */
 
 .leftpanel {
-    background-image: url('銀色.jpg');
+    background-image: url('/img/銀色.jpg');
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -176,7 +176,7 @@ li button {
 /* 右電梯門 點擊前覆蓋畫面 */
 
 .rightpanel {
-    background-image: url('銀色右.jpg');
+    background-image: url('/img/銀色右.jpg');
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -194,7 +194,7 @@ li button {
 #displayarea1 {
     width: 100%;
     height: 100%;
-    background-image: url('area01.jpg');
+    background-image: url('/img/area01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -206,7 +206,7 @@ li button {
 #displayarea2 {
     width: 100%;
     height: 100%;
-    background-image: url('area02.jpg');
+    background-image: url('/img/area02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -218,7 +218,7 @@ li button {
 #displayarea3 {
     width: 100%;
     height: 100%;
-    background-image: url('area03.jpg');
+    background-image: url('/img/area03.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -230,7 +230,7 @@ li button {
 #displayarea4 {
     width: 100%;
     height: 100%;
-    background-image: url('area01.jpg');
+    background-image: url('/img/area01.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

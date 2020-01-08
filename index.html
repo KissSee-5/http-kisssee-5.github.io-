@@ -7,16 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
     <link rel="stylesheet" href="./css/00_bodyCss.css">
-    <link rel="stylesheet" href="./css/01_banner區塊.css">
-    <link rel="stylesheet" href="./css/02_熱門上映電影區塊.css">
+    <link rel="stylesheet" href="./css/01_banner+nav.css">
+    <link rel="stylesheet" href="./css/02_movie.css">
     <link rel="stylesheet" href="./css/03_ticket-price.css">
     <link rel="stylesheet" href="./css/04_MemberSection.css">
-    <link rel="stylesheet" href="./css/05_merchandise.Css">
-    <link rel="stylesheet" href="./css/06_樓層介紹.css">
+    <link rel="stylesheet" href="./css/05_merchandise.css">
+    <link rel="stylesheet" href="./css/06_floor.css">
     <link rel="stylesheet" href="./css/07_creditCard.css">
-    <link rel="stylesheet" href="./css/08_交通.css">
+    <link rel="stylesheet" href="./css/08_traffic.css">
     <link rel="stylesheet" href="./css/09_footer.css">
-    <link rel="stylesheet" href="./css/10_對話框.css">
+    <link rel="stylesheet" href="./css/10_parking-map.css">
     <link rel="stylesheet" href="./css/SoonRelease.css">
 
     <title>親親戲院</title>
@@ -123,6 +123,7 @@
                 width: 100%;
                 background-color: turquoise;
             }
+
             .full-ticket {
                 width: 49%;
             }
@@ -138,6 +139,7 @@
             .heart-ticket {
                 width: 49%;
             }
+
             .child-ticket {
                 width: 49%;
             }
@@ -146,12 +148,43 @@
                 width: calc(49% - 20px);
             }
 
+            .merchandiseArea {
+                height: 100vh;
+            }
+
             .commodity {
                 width: 100%;
                 height: 1100px;
                 margin: auto;
             }
+            .bread-top {
+                height: 20%;
+            }
+            .bread-mid {
+                height: 20%;
+            }
 
+            .bread-bot {
+                height: 20%;
+            }
+            .space{
+                line-height: 80px;
+            }
+            .space-word{
+                margin: 0;
+            }
+            .rest-place-1{
+                justify-content: space-around;
+            }
+            .rest-img02{
+                display: none;
+            }
+            .rest-place-2{
+                justify-content: space-around;
+            }
+            .rest-img05{
+                display: none;
+            }
             .floor {
                 margin-top: 570px;
             }
@@ -162,7 +195,14 @@
         }
 
         @media(max-width: 576px) {
-           
+
+            #B,
+            #C,
+            #D,
+            #E,
+            .space {
+                font-size: 36px;
+            }
 
             .nav {
                 height: 80px;
@@ -210,32 +250,40 @@
             .area2 {
                 display: none;
             }
+
             .swiper-container {
                 display: inline-block;
             }
-            .ticket-note{
+
+            .ticket-note {
                 display: none;
             }
-            .child-ticket-note{
+
+            .child-ticket-note {
                 display: none;
             }
-            .ticket-word{
+
+            .ticket-word {
                 display: none;
             }
-            .ticket-top{
+
+            .ticket-top {
                 display: flex;
                 flex-direction: column;
             }
-            .ticket-mid{
+
+            .ticket-mid {
                 margin-top: 0;
                 display: flex;
                 flex-direction: column;
             }
-            .ticket-bot{
+
+            .ticket-bot {
                 margin-top: 0;
                 display: flex;
                 flex-direction: column;
             }
+
             .full-ticket {
                 width: 100%;
                 height: 110px;
@@ -245,52 +293,133 @@
                 width: 100%;
                 height: 55px;
             }
-            .half-ticket .ticket-kind{
+
+            .half-ticket .ticket-kind {
                 display: none;
             }
+
             .member-ticket {
                 width: 100%;
                 height: 55px;
             }
-            .member-ticket .ticket-kind{
+
+            .member-ticket .ticket-kind {
                 display: none;
             }
+
             .heart-ticket {
                 width: 100%;
                 height: 55px;
             }
-            .heart-ticket .ticket-kind{
+
+            .heart-ticket .ticket-kind {
                 display: none;
             }
+
             .child-ticket {
                 width: 100%;
                 height: 55px;
             }
-            .child-ticket .ticket-kind{
+
+            .child-ticket .ticket-kind {
                 display: none;
             }
-            .ticket-kind{
+
+            .ticket-kind {
                 width: 100%;
                 border: none;
             }
-            .price{
-                border-top:2px solid black ;
+
+            .price {
+                border-top: 2px solid black;
             }
-            .child-ticket .price{
+
+            .child-ticket .price {
                 border-bottom: 2px solid black;
             }
-            .ticket-name{
+
+            .ticket-name {
                 border: none;
             }
-            .ticket-3D{
+
+            .ticket-3D {
                 border-right: 2px solid black;
             }
+
             .rest-word {
                 width: 100%;
                 left: 0;
                 padding: 0;
             }
-           
+
+            .merchandiseArea {
+                height: 23.5vh;
+                padding: 0;
+            }
+
+            .bread {
+                margin: 0;
+            }
+
+            .bread-4 {
+                width: 35%;
+                box-shadow: none;
+            }
+
+            .bread-5 {
+                width: 35%;
+                box-shadow: none;
+            }
+
+            .bread-logo {
+                box-shadow: none;
+                z-index: 5;
+            }
+
+            .bread-top {
+                display: none;
+            }
+
+            .bread-mid {
+                margin: 0;
+                height: 15%;
+            }
+
+            .bread-bot {
+                display: none;
+            }
+
+            .merchandisetitle {
+                background-color: black;
+            }
+
+            .rest {
+                height: 55vh;
+            }
+            .rest-word{
+                background-color: rgba(255 , 255, 255, 0.7);
+            }
+            .space {
+                line-height: 80px;
+            }
+
+            .park {
+                display: none;
+            }
+
+            .map {
+                display: none;
+            }
+
+            .traffic-area {
+                height: 45vh;
+            }
+
+            .traffic-word {
+                width: 100%;
+                font-size: 24px;
+            }
+
             .footer-word {
                 width: 100%;
                 font-size: 16px;
@@ -308,11 +437,11 @@
             <div class="banner">
                 <div class="bannerswiper-container">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="background-image: url('Banner-02.png');"></div>
-                        <div class="swiper-slide" style="background-image: url('Banner-03.png');"></div>
-                        <div class="swiper-slide" style="background-image: url('Banner-04.png');"></div>
-                        <div class="swiper-slide" style="background-image: url('Banner-05.png');"></div>
-                        <div class="swiper-slide" style="background-image: url('Banner-05.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('/img/Banner-02.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('/img/Banner-03.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('/img/Banner-04.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('/img/Banner-05.png');"></div>
+                        <div class="swiper-slide" style="background-image: url('/img/Banner-05.png');"></div>
                     </div>
                 </div>
             </div>
@@ -333,14 +462,14 @@
             <div id='A' class="hot">現正熱映</div>
             <div class="movieswiper-container">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background-image:url('movie01.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie02.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie03.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie04.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie05.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie06.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie07.jpg')"></div>
-                    <div class="swiper-slide" style="background-image:url('movie08.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie01.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie02.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie03.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie04.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie05.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie06.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie07.jpg')"></div>
+                    <div class="swiper-slide" style="background-image:url('/img/movie08.jpg')"></div>
                 </div>
                 <div class="movieContent">
                     <div class="area">
@@ -1059,8 +1188,10 @@
 
 
         </div>
-        <a href="#"><div class="go-to-top">top</div></a>
-        
+        <a href="#">
+            <div class="go-to-top">top</div>
+        </a>
+
     </div>
 
 

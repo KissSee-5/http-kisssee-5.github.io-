@@ -20,7 +20,7 @@
             width:  100%;
             height: 450px;
             background-color: aqua;
-            background-image:url('movieR01.jpg');
+            background-image:url('/img/movieR01.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -32,7 +32,7 @@
             height: 200px;
             background-color: gray;
             float: left;
-            background-image:url('movieR03.jpg');
+            background-image:url('/img/movieR03.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -57,7 +57,7 @@
             height: 200px;
             background-color: black;
             float: left;
-            background-image:url('movieR02.jpg');
+            background-image:url('/img/movieR02.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -69,7 +69,7 @@
             height: 450px;
             background-color: hotpink;
             float: left;
-            background-image:url('movieR08.jpg');
+            background-image:url('/img/movieR08.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -82,7 +82,7 @@
             height: 240px;
             background-color: indianred;
             float: left;
-            background-image:url('movieR09.jpg');
+            background-image:url('/img/movieR09.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -94,7 +94,7 @@
             width: 67%;
             height: 210px;
             float: left;
-            background-image:url('movieR05.jpg');
+            background-image:url('/img/movieR05.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -105,7 +105,7 @@
             height: 180px;
             background-color: khaki;
             float: right;
-            background-image:url('movieR07.jpg');
+            background-image:url('/img/movieR07.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -116,7 +116,7 @@
             height: 260px;
             background-color: lawngreen;
             float: left;
-            background-image:url('movieR06.jpg');
+            background-image:url('/img/movieR06.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -128,7 +128,7 @@
             width: 50%;
             height: 260px;
             float: left;
-            background-image:url('movieR04.jpg');
+            background-image:url('/img/movieR04.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
