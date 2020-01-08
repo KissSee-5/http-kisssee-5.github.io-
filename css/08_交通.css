@@ -1,6 +1,6 @@
 .traffic-area {
     width:100%;
-    height: 540px;
+    height: 60vh;
     background-image: url('bg03.jpg');
     background-position: center;
     background-size: cover;
@@ -8,15 +8,14 @@
 }
 
 .traffic {
-    width: 1140px;
-    height: 540px;
-   
+    width: 100%;
+    height: 100%;
     margin: auto;
     position: relative;
 }
 
 .traffic-content {
-    margin-left: 20px;
+    margin-left: 50%;
 }
 
 .traffic-content span {
@@ -25,14 +24,14 @@
 }
 
 .traffic-word {
-    width: 420px;
+    width: 40%;
     margin-top: 30px;
     float: left;
 }
 
 .map {
-    width: 547px;
-    height: 340px;
+    width: 60%;
+    height: 60%;
     background-image: url('map.jpg');
     background-position: center;
     background-size: contain;

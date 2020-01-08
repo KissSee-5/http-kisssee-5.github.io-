@@ -6,35 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
-    <link rel="stylesheet" href="00_bodyCss.css">
-    <link rel="stylesheet" href="01_banner區塊.css">
-    <link rel="stylesheet" href="02_熱門上映電影區塊.css">
-    <link rel="stylesheet" href="03_ticket-price.css">
-    <link rel="stylesheet" href="04_MemberSection.css">
-    <link rel="stylesheet" href="05_merchandise.Css">
-    <link rel="stylesheet" href="06_樓層介紹.css">
-    <link rel="stylesheet" href="07_creditCard.css">
-    <link rel="stylesheet" href="08_交通.css">
-    <link rel="stylesheet" href="09_footer.css">
-    <link rel="stylesheet" href="10_對話框.css">
-    <link rel="stylesheet" href="SoonRelease.css">
+    <link rel="stylesheet" href="../css/00_bodyCss.css">
+    <link rel="stylesheet" href="../css/01_banner區塊.css">
+    <link rel="stylesheet" href="../css/02_熱門上映電影區塊.css">
+    <link rel="stylesheet" href="../css/03_ticket-price.css">
+    <link rel="stylesheet" href="../css/04_MemberSection.css">
+    <link rel="stylesheet" href="../css/05_merchandise.Css">
+    <link rel="stylesheet" href="../css/06_樓層介紹.css">
+    <link rel="stylesheet" href="../css/07_creditCard.css">
+    <link rel="stylesheet" href="../css/08_交通.css">
+    <link rel="stylesheet" href="../css/09_footer.css">
+    <link rel="stylesheet" href="../css/10_對話框.css">
+    <link rel="stylesheet" href="../css/SoonRelease.css">
 
     <title>親親戲院</title>
     <style>
         @media(max-width: 1140px) {
-            .all {
-                min-width: 1140px;
-            }
-
             .nav-container {
                 width: 100%;
             }
 
-            .button {
-                font-size: 30px;
-            }
-
             .rest {
+                width: 90%;
                 position: unset;
                 margin: auto;
             }
@@ -49,10 +42,67 @@
 
             .ticket-all {
                 width: 100%;
+                font-size: 16px;
+            }
+
+            .full-ticket {
+                width: 48%;
+            }
+
+            .half-ticket {
+                width: 48%;
+            }
+
+            .member-ticket {
+                width: 48%;
+            }
+
+            .heart-ticket {
+                width: 48%;
+            }
+
+
+            .child-ticket {
+                width: 48%;
+            }
+
+            .ticket-word {
+                width: calc(48% - 20px);
+                height: 100%;
+            }
+
+            .ticket-kind {
+                width: calc(100% - 4px);
+            }
+
+            .price {
+                width: 100%;
+            }
+
+            .commodity {
+                width: 90%;
+            }
+
+            .traffic-content {
+                margin-left: 50px;
+            }
+
+            .park {
+                height: 80%;
+                margin-left: 35.5%;
+                bottom: -100px;
             }
         }
 
         @media(max-width: 768px) {
+            .button {
+                font-size: 20px;
+            }
+
+            .fixed-nav {
+                font-size: 12px;
+            }
+
             .movieArea {
                 background-position: center;
                 background-size: cover;
@@ -73,54 +123,179 @@
                 width: 100%;
                 background-color: turquoise;
             }
+            .full-ticket {
+                width: 49%;
+            }
+
+            .half-ticket {
+                width: 49%;
+            }
+
+            .member-ticket {
+                width: 49%;
+            }
+
+            .heart-ticket {
+                width: 49%;
+            }
+            .child-ticket {
+                width: 49%;
+            }
+
+            .ticket-word {
+                width: calc(49% - 20px);
+            }
+
+            .commodity {
+                width: 100%;
+                height: 1100px;
+                margin: auto;
+            }
 
             .floor {
                 margin-top: 570px;
             }
+
+            .rest {
+                width: 100%;
+            }
         }
-        @media(max-width: 360px){
-            .banner{
-                height: 70%;
-            }
-            .bannerswiper-container{
-                height: 550px;
-                background-color: black;
-            }
-            .bannerswiper-container .swiper-slide{
-                background-size: contain;
-            }
-            .nav{
+
+        @media(max-width: 576px) {
+           
+
+            .nav {
                 height: 80px;
                 display: flex;
             }
-            .nav-container{
+
+            .nav-container {
                 width: 100px;
                 height: 100px;
                 background-color: aqua;
             }
-            .logo{
+
+            .logo {
                 display: none;
             }
-            .nav-container:hover .button-box{
+
+            .nav-container:hover .button-box {
                 display: inline-block;
             }
-            .button-box{
+
+            .button-box {
                 display: none;
                 position: relative;
                 padding: 0;
             }
-            .button{
+
+            .button {
                 width: 360px;
                 background-color: blueviolet;
             }
-            .hot{
-                font-size: 60px;
+
+            .hot {
+                font-size: 36px;
                 width: 100%;
             }
-            .coming-soon{
-                font-size: 60px;
+
+            .coming-soon {
+                font-size: 36px;
             }
-            
+
+            .area1 {
+                display: none;
+            }
+
+            .area2 {
+                display: none;
+            }
+            .swiper-container {
+                display: inline-block;
+            }
+            .ticket-note{
+                display: none;
+            }
+            .child-ticket-note{
+                display: none;
+            }
+            .ticket-word{
+                display: none;
+            }
+            .ticket-top{
+                display: flex;
+                flex-direction: column;
+            }
+            .ticket-mid{
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .ticket-bot{
+                margin-top: 0;
+                display: flex;
+                flex-direction: column;
+            }
+            .full-ticket {
+                width: 100%;
+                height: 110px;
+            }
+
+            .half-ticket {
+                width: 100%;
+                height: 55px;
+            }
+            .half-ticket .ticket-kind{
+                display: none;
+            }
+            .member-ticket {
+                width: 100%;
+                height: 55px;
+            }
+            .member-ticket .ticket-kind{
+                display: none;
+            }
+            .heart-ticket {
+                width: 100%;
+                height: 55px;
+            }
+            .heart-ticket .ticket-kind{
+                display: none;
+            }
+            .child-ticket {
+                width: 100%;
+                height: 55px;
+            }
+            .child-ticket .ticket-kind{
+                display: none;
+            }
+            .ticket-kind{
+                width: 100%;
+                border: none;
+            }
+            .price{
+                border-top:2px solid black ;
+            }
+            .child-ticket .price{
+                border-bottom: 2px solid black;
+            }
+            .ticket-name{
+                border: none;
+            }
+            .ticket-3D{
+                border-right: 2px solid black;
+            }
+            .rest-word {
+                width: 100%;
+                left: 0;
+                padding: 0;
+            }
+           
+            .footer-word {
+                width: 100%;
+                font-size: 16px;
+                padding: 10px;
+            }
         }
     </style>
 
@@ -631,7 +806,44 @@
                         <div class="clearfix"></div>
 
                     </div>
+                    <div class="swiper-container">
+                        <div id="slideshow">
 
+                            <img class="active" src='movieR01.jpg' />
+                            <img src='movieR02.jpg' />
+                            <img src='movieR03.jpg' />
+                            <img src='movieR04.jpg' />
+                            <img src='movieR05.jpg' />
+                            <img src='movieR06.jpg' />
+                            <img src='movieR07.jpg' />
+                            <img src='movieR08.jpg' />
+                            <img src='movieR09.jpg' />
+
+                            <div>
+                                <span class="active">1</span>
+                                <span>2</span>
+                                <span>3</span>
+                                <span>4</span>
+                                <span>5</span>
+                                <span>6</span>
+                                <span>7</span>
+                                <span>8</span>
+                                <span>9</span>
+                            </div>
+
+                            <p class="active">這是第一幅圖片哈哈哈</p>
+                            <p>這是第二幅圖片咩</p>
+                            <p>到第三幅了！</p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -692,6 +904,7 @@
                             <div class="price-3D">210</div>
                         </div>
                         <div class="ticket-note">滿6歲以上～未滿12歲之兒童(須出示證件)</div>
+
                     </div>
                 </div>
                 <div class="ticket-bot">
@@ -707,31 +920,25 @@
                             <div class="price-3D">150</div>
                         </div>
                         <div class="child-ticket-note">
-                            <ul>
-                                <li>
-                                    持有身心障礙手冊（註記陪伴者優惠限１位）
-                                </li>
-                                <li>
-                                    滿65歲以上，購票及入場須出示證件，限本人使用。
-                                </li>
-                                <li>
-                                    滿2歲以上～未滿6歲幼童，限觀賞普遍級電影。
-                                </li>
-                            </ul>
+
+                            持有身心障礙手冊（註記陪伴者優惠限１位）
+                            <br>
+                            滿65歲以上，購票及入場須出示證件，限本人使用。
+                            <br>
+                            滿2歲以上～未滿6歲幼童，限觀賞普遍級電影。
+
                         </div>
                     </div>
                     <div class="ticket-word">
-                        <ul>
-                            <li>
-                                持優待票觀賞3D影片須補80元、持招待票觀賞3D影片須補150元。
-                            </li>
-                            <li>
-                                2D或3D影片，未滿2歲且不佔位之兒童無需購票可免費入場觀賞普遍級影片，每位兒童須由至紹一位已購票之成人陪伴。
-                            </li>
-                            <li>
-                                憑會員卡現金購票3D$280元、2D$190元。
-                            </li>
-                        </ul>
+
+                        持優待票觀賞3D影片須補80元、持招待票觀賞3D影片須補150元。
+                        <br>
+                        <br>
+                        2D或3D影片，未滿2歲且不佔位之兒童無需購票可免費入場觀賞普遍級影片，每位兒童須由至紹一位已購票之成人陪伴。
+                        <br>
+                        <br>
+                        憑會員卡現金購票3D$280元、2D$190元。
+
                     </div>
                 </div>
             </div>
@@ -852,8 +1059,8 @@
 
 
         </div>
-
-        <div class="credit-card"></div>
+        <a href="#"><div class="go-to-top">top</div></a>
+        
     </div>
 
 
@@ -945,7 +1152,47 @@
 
 
 
+        function slideshow1() {
+            var slideshow = document.getElementById("slideshow"),
+                imgs = slideshow.getElementsByTagName("img"),
+                pages = slideshow.getElementsByTagName("span"),
+                descrips = slideshow.getElementsByTagName("p"),
+                current = 0;
+            function slideOff() {
+                imgs[current].className = "";
+                pages[current].className = "";
+                descrips[current].className = "";
+            }
+            function slideOn() {
+                imgs[current].className = "active";
+                pages[current].className = "active";
+                descrips[current].className = "active";
 
+            }
+            function changeSlide() {
+                slideOff();
+                current++;
+                if (current >= 7) current = 0;
+                slideOn();
+            }
+
+            var slideon = setInterval(changeSlide, 2000);
+            slideshow.onmouseover = function () {
+                clearInterval(slideon);
+            }
+            slideshow.onmouseout = function () {
+                slideon = setInterval(changeSlide, 2000);
+            }
+
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].onmouseover = function () {
+                    slideOff();
+                    current = this.innerHTML - 1;
+                    slideOn();
+                }
+            }
+        }
+        slideshow1();
     </script>
 
 

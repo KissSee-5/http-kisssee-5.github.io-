@@ -37,7 +37,7 @@
 }
 
 .rest {
-    width: 1140px;
+    width: 60%;
     height: 100vh;
     position: relative;
     left: 35%;
@@ -258,7 +258,7 @@ input[type=checkbox] {
     position: absolute;
     z-index: 2000;
     transition: 2s;
-    margin-top: 670px;
+    
 }
 .triangle{
     width: 0;
@@ -280,7 +280,6 @@ input[type=checkbox] {
         position: unset;
         margin: auto;
     }
-
     .space-word {
         text-align: center;
     }

@@ -26,9 +26,4 @@ a {
 html{
     scroll-behavior: smooth;
 }
-@media(max-width: 1140px){
-    .all{
-        min-width: 1140px;
-    }
-}
 
