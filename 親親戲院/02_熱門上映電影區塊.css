@@ -1,0 +1,138 @@
+.hot{
+    font-size: 36px;
+    width: 170px;
+    height: 70px;
+    line-height: 110px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+.coming-soon{
+    font-size: 36px;
+    line-height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.movieArea{
+    width:100%;
+    background-image: url('bg04.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.area {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+.closebtn {
+    color: white;
+    position: relative;
+    bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.modal-content {
+    width: 500px;
+    height: 500px;
+    background-image: url('img/TSM/TSMbanner01.jpg');
+    background-position: center;
+    background-size: contain;
+    z-index: 2;
+}
+
+.modal-content-text {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.modal-content-time {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.time {
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.movieswiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.movieswiper-container .swiper-slide {
+    width: 435px;
+    height: 700px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    border-radius: 3%;
+    border-color: 1px white;
+}
+
+.active {
+    display: flex;
+}
+
+.released{
+    width: 100%;
+    height: 930px;
+    background-image: url('區塊背景圖/black-Film.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
