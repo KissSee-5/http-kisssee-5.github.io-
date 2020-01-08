@@ -63,7 +63,6 @@
                 font-size: 30px;
                 line-height: 65px;
                 margin-top: 30px;
-                background-color: brown;
             }
 
             .modal {
@@ -78,6 +77,50 @@
             .floor {
                 margin-top: 570px;
             }
+        }
+        @media(max-width: 360px){
+            .banner{
+                height: 70%;
+            }
+            .bannerswiper-container{
+                height: 550px;
+                background-color: black;
+            }
+            .bannerswiper-container .swiper-slide{
+                background-size: contain;
+            }
+            .nav{
+                height: 80px;
+                display: flex;
+            }
+            .nav-container{
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+            }
+            .logo{
+                display: none;
+            }
+            .nav-container:hover .button-box{
+                display: inline-block;
+            }
+            .button-box{
+                display: none;
+                position: relative;
+                padding: 0;
+            }
+            .button{
+                width: 360px;
+                background-color: blueviolet;
+            }
+            .hot{
+                font-size: 60px;
+                width: 100%;
+            }
+            .coming-soon{
+                font-size: 60px;
+            }
+            
         }
     </style>
 
