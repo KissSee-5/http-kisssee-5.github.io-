@@ -1,7 +1,7 @@
 .ticket {
     color: black;
-    font-size: 60px;
-    line-height: 120px;
+    font-size: 42px;
+    line-height: 80px;
     margin: auto;
     text-align: center;
 }
@@ -42,27 +42,22 @@
 
 .full-ticket {
     width: 530px;
-    height: 200px;
 }
 
 .half-ticket {
     width: 530px;
-    height: 200px;
 }
 
 .member-ticket {
     width: 530px;
-    height: 200px;
 }
 
 .heart-ticket {
     width: 530px;
-    height: 200px;
 }
 
 .child-ticket {
     width: 530px;
-    height: 230px;
 }
 
 .ticket-word {

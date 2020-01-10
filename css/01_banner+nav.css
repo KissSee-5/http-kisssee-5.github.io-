@@ -1,35 +1,68 @@
 /* banner區塊 */
-.main{
-    width:100%;
+
+.main {
+    width: 100%;
 }
 
 .banner {
-    width: 100%; 
+    width: 100%;
 }
 
-.bannerswiper-container{
+.bannerswiper-container {
     width: 100%;
-    height: 68vh;
+    height: 70vh;
+}
+
+.tablet-container-container {
+    width: 100%;
+    height: 80vh;
+    
+}
+
+.mobile-container-container {
+    width: 100%;
+    height: 90vh;
+   
 }
 
 .bannerswiper-container .swiper-slide {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+   
 }
+
+.tablet-container .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 80vh;
+}
+
+.mobile-container .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: black;
+    height: 80vh;
+}
+
 
 nav {
     background-color: #000728;
-    top:0;
+    top: 0;
     width: 100%;
-    transition:all 0.5s;
+    transition: all 0.5s;
     position: relative;
     z-index: 111111111;
 }
+
 .fixed-nav nav {
     background-color: rgba(0, 0, 30, 0.7);
     position: fixed;
-  }
+}
+
 .nav-container {
     width: 60%;
     margin: auto;
@@ -57,11 +90,44 @@ nav {
     font-size: 30px;
 }
 
-@media(max-width: 1140px){
+@media(max-width: 1140px) {
     .nav-container {
         width: 100%;
     }
     .button {
         font-size: 30px;
+    }
+}
+
+@media(max-width: 576px) {
+    .nav-container {
+        width: 80px;
+        height: 100px;
+        
+    }
+    .button-box {
+        display: none;
+        
+    }
+    .logo {
+        margin: auto;
+    }
+
+    .nav-container:hover .button-box{
+        display: block;
+    }
+
+    .button{
+        display: inline-block;
+        width: 100%;
+        background-color: blueviolet;
+        font-size: 20px;
+        margin:unset;
+        text-align: center;
+        position: relative;
+        top: 100px;
+    }
+    .nav-container:hover .logo{
+        display: none;
     }
 }

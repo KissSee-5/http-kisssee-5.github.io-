@@ -1,4 +1,4 @@
-.hot{
+.hot {
     font-size: 36px;
     width: 170px;
     height: 70px;
@@ -7,15 +7,62 @@
     color: white;
     text-align: center;
 }
-.coming-soon{
+
+.coming-soon {
     font-size: 36px;
     line-height: 100px;
     background-color: black;
     color: white;
     text-align: center;
 }
-.movieArea{
-    width:100%;
+/* 追加即將上映程式開始 */
+
+.introduction {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+}
+
+.coming_soon_introduction_box {
+    width: 100%;
+    position: absolute;
+    top: -320px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+
+.coming_soon_introduction_box_content {
+    width: 100%;
+    margin: auto;
+}
+
+.coming_soon_introduction_img{
+    float:left;
+}
+
+.content_box {
+    font-size: 20px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    float:left;
+}
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+/* 追加即將上映程式結束 */
+
+.movieArea {
+    width: 100%;
     background-image: url('../img/bg04.jpg');
     background-size: cover;
     overflow: hidden;
@@ -38,9 +85,8 @@
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
+    /* Full width */
     overflow: hidden;
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
@@ -55,51 +101,113 @@
     from {
         transform: scale(0)
     }
-
     to {
         transform: scale(1)
     }
 }
 
-.closebtn {
-    color: white;
-    position: relative;
-    bottom: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+.modal-content-text ul li{
+    font-size: 20px;
 }
 
+li p {
+    font-size: 12px;
+}
+
+
 .modal-content {
-    width: 500px;
-    height: 500px;
-    background-image: url('');
     background-position: center;
     background-size: contain;
+    background-repeat: no-repeat;
     z-index: 2;
+}
+
+.modal-pic01{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie01.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic02{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie02.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic03{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie03.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic04{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie04.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic05{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie05.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic06{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie06.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic07{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie07.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.modal-pic08{
+    width:435px;
+    height:700px;
+    background-image:url('../img/movie08.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .modal-content-text {
     color: white;
     font-size: 30px;
     line-height: 40px;
+    padding:20px;
 }
 
 .modal-content-time {
-    width: 500px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding:20px;
 }
 
 .time {
     color: white;
     font-size: 20px;
     line-height: 35px;
+}
+
+.time li{
+    text-align: center;
 }
 
 .movieswiper-container {
@@ -125,14 +233,234 @@
     display: flex;
 }
 
-.released{
+.released {
     width: 100%;
     height: 930px;
-    background-image: url('../img/區塊背景圖/black-Film.png');
+    background-image: url('../img/film.png');
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
+.container-a {
+    width: 100%;
+}
+
+.released-block {
+    width: 1140px;
+}
+
+.area1 {
+    width: 26%;
+    float: left;
+}
+
+.movie1 {
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+    background-image: url('../img/movieR01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie2 {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    float: left;
+    background-image: url('../img/movieR03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.area2 {
+    width: 74%;
+    float: left;
+}
+
+.area3 {
+    width: 45%;
+    height: 440px;
+    float: right;
+}
+
+.movie3 {
+    width: 55%;
+    height: 200px;
+    background-color: black;
+    float: left;
+    background-image: url('../img/movieR02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie4 {
+    width: 33%;
+    height: 450px;
+    background-color: hotpink;
+    float: left;
+    background-image: url('../img/movieR08.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie5 {
+    width: 22%;
+    height: 240px;
+    background-color: indianred;
+    float: left;
+    background-image: url('../img/movieR09.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie9 {
+    background-color: lightskyblue;
+    width: 67%;
+    height: 210px;
+    float: left;
+    background-image: url('../img/movieR05.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie6 {
+    width: 100%;
+    height: 180px;
+    background-color: khaki;
+    float: right;
+    background-image: url('../img/movieR07.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie7 {
+    width: 50%;
+    height: 260px;
+    background-color: lawngreen;
+    float: left;
+    background-image: url('../img/movieR06.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie8 {
+    background-color: lightcoral;
+    width: 50%;
+    height: 260px;
+    float: left;
+    background-image: url('../img/movieR04.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 650px;
+    display: none;
+}
+
+#slideshow {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slideshow img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s linear;
+    border: black 1px solid;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#slideshow img.active {
+    opacity: 1;
+}
+
+#slideshow div {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
+
+#slideshow span {
+    display: inline-block;
+    width: 50px;
+    line-height: 50px;
+    border-radius: 25px;
+    margin: 0 15px;
+    background: white;
+    font-size: 20px;
+    font-family: "微軟正黑體";
+}
+
+#slideshow span.active {
+    color: white;
+    background: #FFDD55;
+}
+
+#slideshow p {
+    position: absolute;
+    top: -18px;
+    left: -400px;
+    line-height: 30px;
+    padding: 5px 30px;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(100, 100, 100, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    border-radius: 50px;
+}
+
+#slideshow p.active {
+    left: 0;
+    opacity: 1;
+}
+@media(max-width: 768px){
+    .modal-content{
+        display: none;
+    }
+    .modal-content-time{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media(max-width: 576px) {
+    .hot {
+        font-size: 32px;
+    }
+    .movieswiper-container {
+        padding-top: 30px;
+    }
+
+    .coming-soon {
+        font-size: 32px;
+    }
+}
