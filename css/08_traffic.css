@@ -1,0 +1,65 @@
+.traffic-area {
+    width:100%;
+    height: 60vh;
+    background-image: url('/img/bg03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.traffic {
+    width: 80%;
+    height: 100%;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+}
+.traffic p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.traffic-content{
+    padding: 20px;
+}
+.traffic-content span {
+    font-size: 36px;
+    font-weight: 900;
+    color: darkblue;
+}
+
+.traffic-word {
+    width: 40%;
+    height: 100%;
+    margin-top: 30px;
+    border-radius: 5%;
+    background-color: rgba(247, 248, 152, 0.562);
+    
+}
+
+.map {
+    width: 60%;
+    height: 100%;
+    background-image: url('/img/map-02.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+@media(max-width: 1140px){
+    .traffic{
+        width: 100%;
+    }
+    .traffic-content{
+        padding: 0px;
+    }
+}
+
+@media(max-width: 576px){
+    .traffic{
+        width: 100%;
+    }
+    .traffic-content{
+        padding: 0px;
+    }
+}
