@@ -1,0 +1,392 @@
+.hot {
+    font-size: 36px;
+    width: 170px;
+    height: 70px;
+    line-height: 110px;
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.coming-soon {
+    font-size: 36px;
+    line-height: 100px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* 追加即將上映程式開始 */
+
+.introduction {
+    width: 100%;
+    max-width: 1140px;
+    margin: auto;
+    position: relative;
+}
+
+.coming_soon_introduction_box {
+    width: 100%;
+    position: absolute;
+    top: -320px;
+    left: 0px;
+    background-color: black;
+    color: white;
+}
+
+.coming_soon_introduction_box_content {
+    width: 100%;
+    margin: auto;
+    display: flex;
+}
+
+.coming_soon_introduction_img {
+    float: left;
+}
+
+.content_box {
+    box-sizing: border-box;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 33px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+/* 追加即將上映程式結束 */
+
+.movieArea {
+    width: 100%;
+    background-image: url('../img/bg04.jpg');
+    background-size: cover;
+    overflow: hidden;
+}
+
+.area {
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.modal {
+    display: flex;
+    position: absolute;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    border-radius: 3%;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.modal-content-text ul li {
+    font-size: 20px;
+}
+
+li p {
+    font-size: 16px;
+}
+
+.modal-content-text {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 20px;
+}
+
+.modal-content-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.time {
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+.time li {
+    text-align: center;
+}
+
+.movieswiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.movieswiper-container .swiper-slide {
+    width: 435px;
+    height: 700px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-position: center;
+    background-size: contain;
+    display: block;
+    border-radius: 3%;
+}
+
+.active {
+    display: flex;
+}
+
+.released {
+    width: 100%;
+    height: 930px;
+    background-image: url('../img/film.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-a {
+    width: 100%;
+}
+
+.released-block {
+    width: 1140px;
+}
+
+.area1 {
+    width: 26%;
+    float: left;
+}
+
+.movie1 {
+    width: 100%;
+    height: 350px;
+    background-color: aqua;
+    background-image: url('../img/movieR01.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie2 {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    float: left;
+    background-image: url('../img/movieR03.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.area2 {
+    width: 74%;
+    float: left;
+}
+
+.area3 {
+    width: 45%;
+    height: 440px;
+    float: right;
+}
+
+.movie3 {
+    width: 55%;
+    height: 200px;
+    background-color: black;
+    float: left;
+    background-image: url('../img/movieR02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.movie4 {
+    width: 33%;
+    height: 450px;
+    background-color: hotpink;
+    float: left;
+    background-image: url('../img/movieR08.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie5 {
+    width: 22%;
+    height: 240px;
+    background-color: indianred;
+    float: left;
+    background-image: url('../img/movieR09.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie9 {
+    background-color: lightskyblue;
+    width: 67%;
+    height: 210px;
+    float: left;
+    background-image: url('../img/movieR05.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie6 {
+    width: 100%;
+    height: 180px;
+    background-color: khaki;
+    float: right;
+    background-image: url('../img/movieR07.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie7 {
+    width: 50%;
+    height: 260px;
+    background-color: lawngreen;
+    float: left;
+    background-image: url('../img/movieR06.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.movie8 {
+    background-color: lightcoral;
+    width: 50%;
+    height: 260px;
+    float: left;
+    background-image: url('../img/movieR04.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.container-b {
+    width: 100%;
+    display: flex;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    display: none;
+    height: 100%;
+    max-height: 680px;
+    width: 100%;
+    max-width: 576px;
+}
+
+.coming_soon_introduction_box{
+    border-radius: 3%;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+img{
+    border-radius: 3%;
+}
+
+.movieImage {
+    width: 30%;
+    height: 217px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    
+}
+
+.movieImage:hover {
+    opacity: 0.7;
+}
+
+.modalR {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    
+}
+
+.modalR-content {
+    margin: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 576px;
+}
+
+@media(max-width: 768px) {
+    .modal-content {
+        display: none;
+    }
+    .modal-content-time {
+        width: 60%;
+        margin: auto;
+    }
+    .bannerImg {
+        display: none;
+    }
+}
+
+@media(max-width: 576px) {
+    .hot {
+        font-size: 32px;
+    }
+    .movieswiper-container {
+        padding-top: 30px;
+    }
+    .coming-soon {
+        font-size: 32px;
+    }
+    .bannerImg {
+        display: none;
+    }
+
+    .container-b {
+        display:flex;
+        box-sizing: border-box;
+        padding-top:10px;
+    }
+}
