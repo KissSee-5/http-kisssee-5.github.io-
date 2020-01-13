@@ -6,6 +6,10 @@
 
 .banner {
     width: 100%;
+    background-image: url('/img/bgbanner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .bannerswiper-container {
@@ -16,27 +20,23 @@
 .tablet-container-container {
     width: 100%;
     height: 80vh;
-    
 }
 
 .mobile-container-container {
     width: 100%;
     height: 90vh;
-   
 }
 
 .bannerswiper-container .swiper-slide {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-   
 }
 
 .tablet-container .swiper-slide {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: black;
     height: 80vh;
 }
 
@@ -44,10 +44,8 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: black;
     height: 80vh;
 }
-
 
 nav {
     background-color: #000728;
@@ -103,31 +101,37 @@ nav {
     .nav-container {
         width: 80px;
         height: 100px;
-        
     }
     .button-box {
         display: none;
+        width:200px;
         
     }
     .logo {
         margin: auto;
     }
-
-    .nav-container:hover .button-box{
-        display: block;
-    }
-
-    .button{
-        display: inline-block;
-        width: 100%;
-        background-color: blueviolet;
+    
+    .button {
+        border-radius: 10%;
+        background-color: black;
         font-size: 20px;
-        margin:unset;
+        margin: auto;
         text-align: center;
         position: relative;
         top: 100px;
     }
-    .nav-container:hover .logo{
+    .nav-container:hover .logo {
         display: none;
+    }
+
+    .nav-container:hover .button-box {
+        display: block; 
+    }
+
+    .navtitle{
+        margin: auto;
+        padding: 20px;
+        width: 200px;
+
     }
 }

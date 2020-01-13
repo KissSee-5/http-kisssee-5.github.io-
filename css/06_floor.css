@@ -6,6 +6,7 @@
     background-color: black;
     color: white;
     font-size: 42px;
+    line-height: 100px;
     text-align: center;
 }
 
@@ -17,9 +18,9 @@
 }
 
 .space {
-    line-height: 200px;
-    font-size: 48px;
-    background-image: url('../img/休閒區塊.jpg');
+    line-height: 100px;
+    font-size: 36px;
+    background-image: url('/img/休閒區塊.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -31,13 +32,18 @@
 
 .restArea {
     width: 100%;
-    background-image: url('../img/bg02.jpg');
+    background-image: url('/img/bg02.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.75);
     padding: 50px 0;
 }
-
 .rest {
     width: 60%;
     height: 100vh;
@@ -50,6 +56,7 @@
     height: 30%;
     display: flex;
     justify-content: space-between;
+   
 }
 
 .rest-place-2 {
@@ -64,62 +71,73 @@
 .rest-img01 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-1.jpg');
+    background-image: url('/img/rest-1.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
 }
 
 .rest-img02 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-2.jpg');
+    background-image: url('/img/rest-2.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
+
 }
 
 .rest-img03 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-3.jpg');
+    background-image: url('/img/rest-3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
 }
 
 .rest-img04 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-4.jpg');
+    background-image: url('/img/rest-4.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
 }
 
 .rest-img05 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-5.jpg');
+    background-image: url('/img/rest-5.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
 }
 
 .rest-img06 {
     width: 30%;
     height: 100%;
-    background-image: url('../img/rest-6.jpg');
+    background-image: url('/img/rest-6.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 3%;
 }
 
 .rest-word {
     width: 100%;
     margin-top: 100px;
+    font-size: 24px;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-align: justify;
+    border-radius: 3%;
     background-color: palegoldenrod;
-    font-size: 22px;
 }
 .rest-word p{
     padding: 20px;
@@ -161,7 +179,7 @@ li button {
 /* 左電梯門 點擊前覆蓋畫面 */
 
 .leftpanel {
-    background-image: url('../img/銀色.jpg');
+    background-image: url('/img/left-door.png');
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -177,7 +195,7 @@ li button {
 /* 右電梯門 點擊前覆蓋畫面 */
 
 .rightpanel {
-    background-image: url('../img/銀色右.jpg');
+    background-image: url('/img/right-door.png');
     background-position: center;
     background-size: cover;
     width: 50%;
@@ -195,7 +213,7 @@ li button {
 #displayarea1 {
     width: 100%;
     height: 100%;
-    background-image: url('../img/3F-Chin.jpg');
+    background-image: url('/img/3F-Chin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -206,8 +224,7 @@ li button {
 #displayarea2 {
     width: 100%;
     height: 100%;
-    background-image: url('../img/2F-Chin.jpg');
-
+    background-image: url('/img/2F-Chin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -218,8 +235,7 @@ li button {
 #displayarea3 {
     width: 100%;
     height: 100%;
-    background-image: url('../img/1F-Chin.jpg');
-
+    background-image: url('/img/1F-Chin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -230,8 +246,7 @@ li button {
 #displayarea4 {
     width: 100%;
     height: 100%;
-    background-image: url('../img/B1-Chin.jpg');
-
+    background-image: url('/img/B1-Chin.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 1;
@@ -255,28 +270,85 @@ input[type=checkbox] {
 /* 按鈕部分 */
 
 .floor {
+
     position: absolute;
     z-index: 2000;
     transition: 2s;
 }
-
-.triangle {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0 100px 100px 100px;
-    border-color: transparent transparent #007bff transparent;
+.floor a{
+    margin-top: 5px;
 }
-
+.floor ul{
+    width: 170px;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
 .button-2 {
-    width: 200px;
-    background-color: azure;
-    font-size: 36px;
-    text-align: center;
-    border: 3px solid black;
-    border-top: none;
+    width: 50%;
+    height: 85px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('/img/3F-Y.png');
+    background-size: cover;
 }
-
+.button-2:hover{
+    background-image: url('/img/3F-G.png');
+}
+.button-3 {
+    width: 50%;
+    height: 85px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('/img/2F-Y.png');
+    background-size: cover;
+}
+.button-3:hover{
+    background-image: url('/img/2F-G.png');
+}
+.button-4{
+    width: 50%;
+    height: 85px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('/img/1F-Y.png');
+    background-size: cover;
+}
+.button-4:hover{
+    background-image: url('/img/1F-G.png');
+}
+.button-5{
+    width: 50%;
+    height: 85px;
+    margin: auto;
+    border-radius: 50%;
+    background-image: url('/img/B1-Y.png');
+    background-size: cover;
+}
+.button-5:hover{
+    background-image: url('/img/B1-G.png');
+}
+.accordion{
+    display: none;
+}
+.card-body{
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+}
+#floor-3{
+    width: 100%;
+}
+#floor-2{
+    width: 100%;
+}
+#floor-1{
+    width: 100%;
+}
+#floor-B1{
+    width: 100%;
+}
 @media(max-width: 1140px) {
     .rest {
         position: unset;
@@ -292,14 +364,14 @@ input[type=checkbox] {
 
 @media(max-width: 576px) {
     .rest {
-        height: 700px;
+        height: 100%;
         margin: 0px;
         margin: auto;
         
     }
     .rest-place-1 {
         width: 100%;
-        height:189px;
+        height: 189px;
         display: flex;
         justify-content: space-between;
     }
@@ -315,7 +387,7 @@ input[type=checkbox] {
         width: 100%;
         background-color: palegoldenrod;
         font-size: 20px;
-        padding: 0px;
+        padding:  0px;
         left: 0px;
         position: none;
     }

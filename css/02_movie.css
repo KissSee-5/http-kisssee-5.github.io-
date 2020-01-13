@@ -15,6 +15,7 @@
     color: white;
     text-align: center;
 }
+
 /* 追加即將上映程式開始 */
 
 .introduction {
@@ -36,19 +37,22 @@
 .coming_soon_introduction_box_content {
     width: 100%;
     margin: auto;
+    display: flex;
 }
 
-.coming_soon_introduction_img{
-    float:left;
+.coming_soon_introduction_img {
+    float: left;
 }
 
 .content_box {
+    box-sizing: border-box;
+    padding: 20px;
     font-size: 20px;
+    line-height: 33px;
     width: 50%;
     display: flex;
     flex-direction: column;
     margin: auto;
-    float:left;
 }
 
 .display_none {
@@ -77,24 +81,18 @@
 .modal {
     display: flex;
     position: absolute;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    /* Full width */
     overflow: hidden;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
     animation-name: zoom;
     animation-duration: 0.5s;
+    border-radius: 3%;
 }
 
 @keyframes zoom {
@@ -106,98 +104,26 @@
     }
 }
 
-.modal-content-text ul li{
+.modal-content-text ul li {
     font-size: 20px;
 }
 
 li p {
-    font-size: 12px;
-}
-
-
-.modal-content {
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    z-index: 2;
-}
-
-.modal-pic01{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie01.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic02{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie02.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic03{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie03.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic04{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie04.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic05{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie05.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic06{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie06.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic07{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie07.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.modal-pic08{
-    width:435px;
-    height:700px;
-    background-image:url('../img/movie08.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    font-size: 16px;
 }
 
 .modal-content-text {
     color: white;
     font-size: 30px;
     line-height: 40px;
-    padding:20px;
+    padding: 20px;
 }
 
 .modal-content-time {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    padding:20px;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .time {
@@ -206,7 +132,7 @@ li p {
     line-height: 35px;
 }
 
-.time li{
+.time li {
     text-align: center;
 }
 
@@ -226,7 +152,6 @@ li p {
     background-size: contain;
     display: block;
     border-radius: 3%;
-    border-color: 1px white;
 }
 
 .active {
@@ -298,6 +223,7 @@ li p {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 .movie4 {
@@ -370,88 +296,80 @@ li p {
     clear: both;
 }
 
-.swiper-container {
+.container-b {
     width: 100%;
-    height: 650px;
+    display: flex;
+    margin:auto;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     display: none;
+    height: 100%;
+    max-height: 680px;
+    width: 100%;
+    max-width: 576px;
 }
 
-#slideshow {
+.coming_soon_introduction_box{
+    border-radius: 3%;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+}
+
+img{
+    border-radius: 3%;
+}
+
+.movieImage {
+    width: 30%;
+    height: 217px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 5px;
+    
+}
+
+.movieImage:hover {
+    opacity: 0.7;
+}
+
+.modalR {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    background-size: contain;
-    background-repeat: no-repeat;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    
 }
 
-#slideshow img {
+.modalR-content {
+    margin: auto;
+    display: block;
+    height: 100%;
     width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    transition: opacity 1s linear;
-    border: black 1px solid;
-    background-size: contain;
-    background-repeat: no-repeat;
+    max-width: 576px;
 }
 
-#slideshow img.active {
-    opacity: 1;
-}
-
-#slideshow div {
-    width: 100%;
-    position: absolute;
-    bottom: 10px;
-    text-align: center;
-}
-
-#slideshow span {
-    display: inline-block;
-    width: 50px;
-    line-height: 50px;
-    border-radius: 25px;
-    margin: 0 15px;
-    background: white;
-    font-size: 20px;
-    font-family: "微軟正黑體";
-}
-
-#slideshow span.active {
-    color: white;
-    background: #FFDD55;
-}
-
-#slideshow p {
-    position: absolute;
-    top: -18px;
-    left: -400px;
-    line-height: 30px;
-    padding: 5px 30px;
-    font-size: 20px;
-    color: white;
-    background-color: rgba(100, 100, 100, 0.6);
-    opacity: 0;
-    transition: all 0.5s;
-    border-radius: 50px;
-}
-
-#slideshow p.active {
-    left: 0;
-    opacity: 1;
-}
-@media(max-width: 768px){
-    .modal-content{
+@media(max-width: 768px) {
+    .modal-content {
         display: none;
     }
-    .modal-content-time{
+    .modal-content-time {
         width: 60%;
         margin: auto;
     }
+    .bannerImg {
+        display: none;
+    }
 }
+
 @media(max-width: 576px) {
     .hot {
         font-size: 32px;
@@ -459,8 +377,16 @@ li p {
     .movieswiper-container {
         padding-top: 30px;
     }
-
     .coming-soon {
         font-size: 32px;
+    }
+    .bannerImg {
+        display: none;
+    }
+
+    .container-b {
+        display:flex;
+        box-sizing: border-box;
+        padding-top:10px;
     }
 }

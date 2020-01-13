@@ -10,3 +10,8 @@
     text-align: center;
     padding: 60px;
 }
+@media(max-width: 768px){
+    .footer-word{
+        width: 100%;
+    }
+}
