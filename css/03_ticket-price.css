@@ -1,0 +1,285 @@
+.ticketArea {
+    width: 100%;
+    background-image: url('../img/light-1-02.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 60px;
+}
+
+.ticket {
+    color: black;
+    font-size: 40px;
+    line-height: 80px;
+    margin: auto;
+    text-align: center;
+}
+
+.ticket-all {
+    width: 1140px;
+    margin: auto;
+}
+
+.ticket-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ticket-mid {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.ticket-bot {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.full-ticket {
+    width: 528px;
+    border: black 1px solid;
+}
+
+.half-ticket {
+    width: 528px;
+    border: black 1px solid;
+}
+
+.member-ticket {
+    width: 528px;
+    border: black 1px solid;
+}
+
+.heart-ticket {
+    width: 528px;
+    border: black 1px solid;
+}
+
+.child-ticket {
+    width: 528px;
+    border: black 1px solid;
+}
+
+.ticket-word {
+    width: 530px;
+    font-size: 18px;
+    padding: 10px;
+    border: black 1px solid;
+}
+
+.ticket-kind {
+    width: 526px;
+    height: 55px;
+    background-color: hsla(200, 0%, 0%, .7);
+    color: white;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    line-height: 55px;
+    font-weight: bold;
+}
+
+.blank {
+    width: 170px;
+    height: 55px;
+}
+
+.ticket-2D {
+    width: 177px;
+    height: 55px;
+}
+
+.ticket-3D {
+    width: 177px;
+    height: 55px;
+}
+
+.price {
+    width: 526px;
+    height: 55px;
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    line-height: 55px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+}
+
+.ticket-name {
+    width: 170px;
+    height: 55px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+}
+
+.price-2D {
+    width: 180px;
+    height: 55px;
+    font-size: 28px;
+}
+
+.price-3D {
+    width: 180px;
+    height: 55px;
+    font-size: 28px;
+    border-left: black 1px solid;
+}
+
+.ticket-note {
+    width: calc(100% - 4px);
+    text-align: center;
+    font-size: 18px;
+    
+}
+
+.child-ticket-note {
+    width: calc(100% - 4px);
+    font-size: 18px;
+    padding: 10px;
+  
+}
+
+@media(max-width: 1140px) {
+    .ticketArea {
+        background-image: url('../img/light-1-02.jpg');
+    }
+    .ticket-all {
+        width: 100%;
+    }
+    
+}
+
+@media(max-width: 768px) {
+    .ticketArea {
+        background-image: url('../img/light-1-02.jpg');
+     
+    }
+    .full-ticket {
+        width: 50%;
+    }
+    .half-ticket {
+        width: 50%;
+    }
+    .member-ticket {
+        width: 50%;
+    }
+    .heart-ticket {
+        width: 50%;
+    }
+    .child-ticket {
+        width: 50%;
+    }
+    .ticket-word {
+        width: 50%;
+    }
+    .child-ticket-note {
+        width: 99%;
+    }
+    .blank {
+        width: 40%;
+    }
+    .ticket-2D {
+        width: 30%;
+    }
+    .ticket-3D {
+        width: 30%;
+    }
+    .ticket-name {
+        width: 138.2px;
+    }
+    .price-2D {
+        width: 103.6px;
+    }
+    .price-3D {
+        width: 103.6px;
+    }
+    .ticket-kind {
+        width: 90%;
+    }
+    .ticket-note {
+        width: 99%
+    }
+    .price {
+        width: 90%;
+    }
+
+    .ticket-all{
+        margin-left: 20px;
+
+    }
+}
+
+@media(max-width: 576px) {
+    .ticketArea {
+        background-image: url('../img/light-1-02.jpg');
+    }
+
+    .full-ticket {
+        width: 100%;
+    }
+    .half-ticket {
+        width: 100%;
+    }
+    .member-ticket {
+        width: 100%;
+    }
+    .heart-ticket {
+        width: 100%;
+    }
+    .child-ticket {
+        width: 100%;
+    }
+    .ticket-word {
+        width: 100%;
+    }
+   
+    .blank {
+        width: 30%;
+    }
+    .ticket-2D {
+        width: 40%;
+    }
+    .ticket-3D {
+        width: 40%;
+        border-right: none;
+    }
+    .ticket-name {
+        
+        width: 30%;
+        height: 53px;
+      
+    }
+    .price{
+        border-top: none;
+    }
+    .price-2D {
+        
+        width: 40%;
+        
+    }
+    .price-3D {
+        
+        width: 40%;
+      
+    }
+    .ticket-kind {
+        width: 90%;
+    }
+    .ticket-note {
+        width: 90%
+    }
+    .price {
+        width: 90%;
+    }
+
+    .ticket-all{
+        margin: auto;
+
+    }
+}
