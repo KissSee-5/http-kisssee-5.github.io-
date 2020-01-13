@@ -1,0 +1,137 @@
+/* banner區塊 */
+
+.main {
+    width: 100%;
+}
+
+.banner {
+    width: 100%;
+    background-image: url('../img/bgbanner.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bannerswiper-container {
+    width: 100%;
+    height: 70vh;
+}
+
+.tablet-container-container {
+    width: 100%;
+    height: 80vh;
+}
+
+.mobile-container-container {
+    width: 100%;
+    height: 90vh;
+}
+
+.bannerswiper-container .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tablet-container .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.mobile-container .swiper-slide {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+nav {
+    background-color: #000728;
+    top: 0;
+    width: 100%;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 111111111;
+}
+
+.fixed-nav nav {
+    background-color: rgba(0, 0, 30, 0.7);
+    position: fixed;
+}
+
+.nav-container {
+    width: 60%;
+    margin: auto;
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    background-image: url('../img/CHIN-logo-03.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.button-box {
+    margin: auto;
+    width: calc(100% - 100px);
+    line-height: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    font-size: 30px;
+}
+
+@media(max-width: 1140px) {
+    .nav-container {
+        width: 100%;
+    }
+    .button {
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 576px) {
+    .nav-container {
+        width: 80px;
+        height: 100px;
+    }
+    .button-box {
+        display: none;
+        width:200px;
+        
+    }
+    .logo {
+        margin: auto;
+    }
+    
+    .button {
+        border-radius: 10%;
+        background-color: black;
+        font-size: 20px;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 100px;
+    }
+    .nav-container:hover .logo {
+        display: none;
+    }
+
+    .nav-container:hover .button-box {
+        display: block; 
+    }
+
+    .navtitle{
+        margin: auto;
+        padding: 20px;
+        width: 200px;
+
+    }
+}
